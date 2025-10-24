@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <ul>
+            <li class="list active">
+                <a href="#">
+                    <div class="icon"><ion-icon name="home-outline"></ion-icon></div>
+                    <div class="list_name">Home</div>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <div class="icon"><ion-icon name="person-outline"></ion-icon></div>
+                    <div class="list_name">Profile</div>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <div class="icon"><ion-icon name="settings-outline"></ion-icon></div>
+                    <div class="list_name">Setting</div>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <div class="icon"><ion-icon name="mail-outline"></ion-icon></div>
+                    <div class="list_name">Contact</div>
+                </a>
+            </li>
+            <div class="indicator"></div>
+        </ul>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<script>
+    active_link = document.querySelectorAll('.header ul li');
+
+active_link.forEach(item => item.addEventListener('click', function() {
+active_link.forEach(removeActive => removeActive.classList.remove('active'));
+item.classList.add('active');
+}));
+</script>
+</body>
+</html>
