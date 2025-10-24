@@ -102,22 +102,22 @@ body {
   content: '';
   width: 20px;
   height: 20px;
-  background-color: #f000;
-  left: -26px;
-  top: 16px;
-  border-top-right-radius: 10px;
-  box-shadow: 1px -10px 0 0px black;
+  background-color: #00800000;
+  left: -22.5px;
+  top: 17px;
+  border-top-right-radius: 25px;
+  box-shadow: 2px -7px 0 0px #000;
 }
 .indicator:after {
     position: absolute;
   content: '';
   width: 20px;
   height: 20px;
-  background-color: #f000;
-  right: -26px;
-  top: 16px;
-  border-top-left-radius: 10px;
-  box-shadow: 0px -10px 0 0px black;
+  background-color: #ff0f0f00;
+  right: -22px;
+  top: 17px;
+  border-top-left-radius: 25px;
+  box-shadow: 0px -9px 0 0px #000;
 }
 
 .header ul li:nth-child(1).active ~ .indicator {
